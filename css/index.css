@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    box-sizing: inherit;
+  }
+  html {
+    box-sizing: border-box;
+    font-size: var(--htmlFontSize);
+    height: 100%;
+  }
+  
+  body {
+    background-color: var(--bodyBackgroundColor);
+    color: var(--bodyColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-size: var(--bodyFontSize);
+    font-weight: var(--bodyFontWeight);
+    height: 100%;
+    line-height: var(--bodyLineHeight);
+    margin: 0;
+    min-height: 100vh;
+  }
+.align {
+  display: flex;
+  place-items: center;
+  text-align: center;
+}
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--gridMaxWidth);
+  width: var(--gridWidth);
+}
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+#box{
+    border: 5px outset #f388a8 ;
+    background-color: #fabbce;
+    width: 400px;
+    height: 180px;
+    margin: 30px;
+}
+h1{
+    color:#fa7ca2;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 0 0 #dd0606, -2px 0 0 #fff;
+}
+h3{
+    color: #AFDEFA;
+    font-family: Century Gothic;
+    text-shadow: 2px 2px 0 #02a0fc;
+}
+input {
+  background-color:#BDF6E3;
+  border: 2px solid #0ac989;
+  color: #0ac989;
+  font-family: monospace;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  outline: 0;
+  padding: 5px;
+}
+input:hover{
+    background-color: #AFDEFA ;
+    border: 2px solid #02a0fc;
+    color: #3e96d1;
+    transition: 0.7s;
+}
+
+#mostrar {
+    opacity: 1;
+}
