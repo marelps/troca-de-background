@@ -19,6 +19,7 @@
     margin: 0;
     min-height: 100vh;
   }
+
 /* ================= Seleção de texto ==================== */
   ::selection { background: #ebf0f3; color: rgb(141, 141, 141); } 
   ::-moz-selection { background: #ebf0f3; color: rgb(141, 141, 141); }
@@ -29,7 +30,6 @@
   flex-direction: column;
   place-items: center;
   text-align: center;
-  
 }
 
 .grid {
@@ -47,8 +47,8 @@
     height: auto;
     margin: 8%;
 }
-/* Texto caixinha */
-h1{
+
+#box h1{
     color:#fa7ca2;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.3ch;
@@ -68,6 +68,7 @@ button {
   transition: all .3s ease;
   box-shadow: rgb(201, 46, 70) 0px 3px 0px 0px;
   color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
  }
  
  button:hover {
@@ -89,18 +90,38 @@ button {
   align-items: center;
   justify-content: center;
   width: 20em;
+  margin-top: 1em;
 }
- h3{
+.social h4{
   color: #AFDEFA;
   font-family: Century Gothic;
   text-shadow: 1px 1px 1px #02a0fc;
+  margin: 0;
 }
-#social{
+.social p{
+  color: #f388a8;
+  font-family: Century Gothic;
+  font-weight: bold;
+}
+.social b:hover{
+  color: #e41010;
+  text-shadow: 0px 0px 3px #9c0b0b;
+  transition: .9s;
+  cursor: crosshair;
+}
+
+/* Imagens social */
+#link{
   display: flex;
   align-items: center;
   justify-content: center;
   width: auto;
 }
-#social img{
+#link img{
   width: 50%;
+}
+
+#link img:hover{
+  opacity: 30%;
+  transition: 5s;
 }
