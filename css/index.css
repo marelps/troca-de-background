@@ -18,19 +18,27 @@
     line-height: var(--bodyLineHeight);
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    text-align: center;
   }
 
+  a, a:visited{
+    color: inherit;
+  }
+section{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+  width: 20em;
+}
 /* ================= Seleção de texto ==================== */
   ::selection { background: #ebf0f3; color: rgb(141, 141, 141); } 
   ::-moz-selection { background: #ebf0f3; color: rgb(141, 141, 141); }
 
 /* ================= Centralização ===============*/  
-.align {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  text-align: center;
-}
 
 .grid {
   margin-left: auto;
@@ -53,21 +61,21 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.3ch;
     text-transform: uppercase;
-    text-shadow: 2px 0 0 rgb(201, 46, 70), -1px 0 0 #fff;
+    text-shadow: 2px 0 0 rgb(201, 46, 70), -1px 0 0 rgb(255, 218, 218);
 }
 
 /* =================== Button ====================== */
 button {
-  padding: 5% 5%;
+  padding: 1em 1em;
   border-radius: 1.5px;
   border: 0;
-  margin: 2%;
+  margin: 0.5em;
   background-color: #fa7ca2;
   letter-spacing: 1.5px;
   font-size: 100%;
   transition: all .3s ease;
   box-shadow: rgb(201, 46, 70) 0px 3px 0px 0px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 50%, 31%);
   text-transform: uppercase;
  }
  
@@ -77,14 +85,13 @@ button {
  
  button:active {
   background-color: rgb(201, 46, 70);
-  /*50, 168, 80*/
   box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
   transform: translateY(5px);
   transition: 200ms;
  }
 
  /* ================= Social =================== */
-.social{
+footer{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,36 +99,38 @@ button {
   width: 20em;
   margin-top: 1em;
 }
-.social h4{
+footer h4{
   color: #AFDEFA;
   font-family: Century Gothic;
   text-shadow: 1px 1px 1px #02a0fc;
   margin: 0;
 }
-.social p{
+footer p{
   color: #f388a8;
   font-family: Century Gothic;
   font-weight: bold;
 }
-.social b:hover{
+footer b:hover{
   color: #e41010;
   text-shadow: 0px 0px 3px #9c0b0b;
   transition: .9s;
   cursor: crosshair;
 }
 
-/* Imagens social */
+/* Imagens das redes social */
 #link{
   display: flex;
   align-items: center;
   justify-content: center;
   width: auto;
 }
-#link img{
-  width: 50%;
+#link i{
+  margin: 0.5em;
+  color: #f388a8;
+  text-shadow:  1.4px 1.4px 2px rgb(201, 46, 70);
 }
-
-#link img:hover{
-  opacity: 30%;
-  transition: 5s;
+#link i:hover{
+  color: #AFDEFA;
+  text-shadow:  1.4px 1.4px 2px #02a0fc;
+  transition: .5s;
 }
